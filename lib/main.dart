@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: const Center(
           child: Text(
-        'A drawer is an invisible side screen.',
+        'Texto de Prueba',
         style: TextStyle(fontSize: 20.0),
       )),
       drawer: Drawer(
@@ -45,15 +45,15 @@ class MyHomePage extends StatelessWidget {
               child: UserAccountsDrawerHeader(
                 decoration: BoxDecoration(color: Colors.green),
                 accountName: Text(
-                  "Abhishek Mishra",
+                  "Brayan Solórzano",
                   style: TextStyle(fontSize: 18),
                 ),
-                accountEmail: Text("abhishekm977@gmail.com"),
+                accountEmail: Text("solorzanobrayan@gmail.com"),
                 currentAccountPictureSize: Size.square(50),
                 currentAccountPicture: CircleAvatar(
                   backgroundColor: Color.fromARGB(255, 165, 255, 137),
                   child: Text(
-                    "A",
+                    "B",
                     style: TextStyle(fontSize: 30.0, color: Colors.blue),
                   ), //Text
                 ), //circleAvatar
@@ -61,42 +61,42 @@ class MyHomePage extends StatelessWidget {
             ), //DrawerHeader
             ListTile(
               leading: const Icon(Icons.person),
-              title: const Text(' My Profile '),
+              title: const Text(' Mi perfil '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.book),
-              title: const Text(' My Course '),
+              title: const Text(' Mi Curso '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.workspace_premium),
-              title: const Text(' Go Premium '),
+              title: const Text(' Hazte Socio '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.video_label),
-              title: const Text(' Saved Videos '),
+              title: const Text(' Videos Guardados '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.edit),
-              title: const Text(' Edit Profile '),
+              title: const Text(' Editar Perfil '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.logout),
-              title: const Text('LogOut'),
+              title: const Text('Cerrar Sesión'),
               onTap: () {
                 Navigator.pop(context);
               },
